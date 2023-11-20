@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareModal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="Circle1"></div>
+        <div class="Circle2"></div>
+        <div class="container">
+            <div class="image">
+                <img class="img1" src="./WhatsApp Image 2023-11-19 at 13.47-PhotoRoom.jpg" alt="">
+            </div>
+            <h2 class="Name">Sachin Bhagat</h2>
+            <div class="title">Software Engineer</div>
+            <div class="Button">
+                <button id="button1" onclick="openModal()" ><i class="fa-solid fa-share"></i>Share My Profile</button>
+                <button id="button2">
+                    <a href="https://www.linkedin.com/in/sachinbhagat1/">Follow Me</a>
+                </button>
+            </div>
+        </div>
+        <div class="Modal">
+            <div class="ModalHeading">
+                <div class="heading">Share My Profile</div>
+                <div class="close" onclick="closeModal()">
+                    <i  id="cross" class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="MoralSubHeading">Share this via</div>
+            <div class="icon">
+                <a class="linkedin" href="https://www.linkedin.com/in/sachinbhagat1/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="insta" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="twitter" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="whatsapp" href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Overlay  -->
+        <div class="overlay" onclick="closeModal()"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
